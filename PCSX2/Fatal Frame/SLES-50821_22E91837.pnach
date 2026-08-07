@@ -1,0 +1,9 @@
+gametitle=Project Zero (PAL) [SLES-50821]
+
+[Viewfinder Stick Swap]
+author=DAOWAce
+description=Swaps the analog stick functions while using the Camera Obscura viewfinder.
+
+patch=1,EE,2018CE4C,extended,90620193
+patch=1,EE,2018CE60,extended,90620194
+patch=1,EE,2020DD98,extended,24040000

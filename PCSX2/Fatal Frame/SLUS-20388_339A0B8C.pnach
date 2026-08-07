@@ -1,0 +1,9 @@
+gametitle=Fatal Frame (NTSC-U) (SLUS-20388)
+
+[Viewfinder Stick Swap]
+author=DAOWAce
+description=Swaps the analog stick functions while using the Camera Obscura viewfinder.
+
+patch=1,EE,2018B144,extended,90620193
+patch=1,EE,2018B158,extended,90620194
+patch=1,EE,2020B1A8,extended,24040000
