@@ -3,7 +3,14 @@ gametitle=Champions of Norrath (NTSC-U) (SLUS-20565)
 [Voice Stream Latency Fix]
 
 author=DAOWAce
-description=EXPERIMENTAL: Removes the delay between dialogue appearing and streamed voice playback beginning.
-//Music transitions (ambient sound tracks exist as music too) cut together instead of fade out/in, working to fix
+description=Removes the delay between dialogue appearing and streamed voice playback beginning.
 
-patch=1,EE,0024A914,word,1000001A
+patch=1,EE,002DFF9C,word,26A1FFFE
+patch=1,EE,002DFFA0,word,10200005
+patch=1,EE,002DFFA4,word,00000000
+patch=1,EE,002DFFA8,word,10600003
+patch=1,EE,002DFFAC,word,00000000
+patch=1,EE,002DFFB0,word,08092A47
+patch=1,EE,002DFFB4,word,00000000
+patch=1,EE,002DFFB8,word,08092A60
+patch=1,EE,002DFFBC,word,00000000
