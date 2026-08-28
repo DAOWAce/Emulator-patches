@@ -5,6 +5,7 @@ gametitle=Champions of Norrath (NTSC-U) (SLUS-20565)
 author=DAOWAce
 description=Removes the delay between dialogue appearing and streamed voice playback beginning.
 
+patch=1,EE,0024A914,word,080B7FE7
 patch=1,EE,002DFF9C,word,26A1FFFE
 patch=1,EE,002DFFA0,word,10200005
 patch=1,EE,002DFFA4,word,00000000
