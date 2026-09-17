@@ -1,7 +1,6 @@
 gametitle=Champions of Norrath (NTSC-U) (SLUS-20565)
 
 [Voice Stream Latency Fix]
-
 author=DAOWAce
 description=Removes the delay between dialogue appearing and streamed voice playback beginning.
 
@@ -15,3 +14,51 @@ patch=1,EE,002DFFB0,word,08092A47
 patch=1,EE,002DFFB4,word,00000000
 patch=1,EE,002DFFB8,word,08092A60
 patch=1,EE,002DFFBC,word,00000000
+
+[Faster Player Status Voice Lines]
+author=DAOWAce
+description=Shortens the sometimes long delay between character responses (ie full inventory).
+
+patch=1,EE,001A69F8,word,24060026
+
+[Test: No-interlacing 60 FPS + 50% Texture Budget]
+author=DAOWAce
+description=Experimental no-interlacing patch that doesn't cripple the game like the built-in one. Expands texture budget to try and workaround empty render squares.
+
+// No-interlace field handling.
+// Original: 9342CA4C  lbu v0,vblankField
+patch=1,EE,001912CC,word,0000102D
+
+// Full height rendering/UI path.
+patch=1,EE,00484474,word,00000001
+
+// Disable performance triggered 30 FPS fallback.
+// Original: 0C0644E8  jal engineSetVideoMode
+patch=1,EE,00190C74,word,00000000
+
+// Disable texture decompression triggered 30 FPS fallback.
+// Original: 0C0644E8  jal engineSetVideoMode
+patch=1,EE,002CF928,word,00000000
+
+// Texture budget family A:
+// 0x2048 -> 0x44F6
+// midpoint = 0x329F
+//
+// Original: 240244F6  addiu v0,zero,0x44F6
+// Test:     2402329F  addiu v0,zero,0x329F
+
+patch=1,EE,0016F96C,word,2402329F
+patch=1,EE,001702B4,word,2402329F
+
+// Texture budget family B:
+// 0x24AE -> 0x495C
+// midpoint = 0x3705
+//
+// Original: 2402495C  addiu v0,zero,0x495C
+// Test:     24023705  addiu v0,zero,0x3705
+
+patch=1,EE,001702EC,word,24023705
+patch=1,EE,00171600,word,24023705
+patch=1,EE,0017173C,word,24023705
+patch=1,EE,00171950,word,24023705
+patch=1,EE,00171DE0,word,24023705
