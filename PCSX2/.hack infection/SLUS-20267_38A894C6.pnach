@@ -255,6 +255,79 @@ patch=1,EE,20520960,extended,2A82001C
 patch=1,EE,2052096C,extended,24020038
 patch=1,EE,205209A0,extended,00021103
 
+// ===== SHARED STATUS DURATION AND PERIODIC EFFECTS =====
+patch=1,EE,D0400820,extended,14006367
+patch=1,EE,2056BFE4,extended,8F888DF0
+patch=1,EE,2056BFE8,extended,8D080358
+patch=1,EE,2056BFEC,extended,31080001
+patch=1,EE,2056BFF0,extended,1500024C
+patch=1,EE,2056BFF4,extended,8E230000
+patch=1,EE,2056BFF8,extended,8C640008
+patch=1,EE,2056BFFC,extended,30900007
+patch=1,EE,2056C000,extended,16000008
+patch=1,EE,2056C004,extended,308800E0
+patch=1,EE,2056C008,extended,11000246
+patch=1,EE,2056C00C,extended,8E240004
+patch=1,EE,2056C010,extended,24830020
+patch=1,EE,2056C014,extended,1000000F
+patch=1,EE,2056C018,extended,24840040
+patch=1,EE,2056C01C,extended,00000000
+patch=1,EE,2056C020,extended,00000000
+patch=1,EE,2056C024,extended,8E240004
+patch=1,EE,2056C028,extended,24830088
+patch=1,EE,2056C02C,extended,10000009
+patch=1,EE,2056C030,extended,248400A8
+
+// ===== NATURAL SP RECOVERY INTERVAL =====
+patch=1,EE,D0400820,extended,05006367
+patch=1,EE,2056C5DC,extended,24030078
+patch=1,EE,2056C644,extended,24030078
+patch=1,EE,2056C6BC,extended,24030078
+patch=1,EE,2056C724,extended,24030078
+patch=1,EE,2056C7A4,extended,24030078
+
+// ===== CHARM AND CONFUSION MOVEMENT =====
+patch=1,EE,D0400820,extended,18006367
+patch=1,EE,20598658,extended,30420020
+patch=1,EE,2059865C,extended,10400004
+patch=1,EE,20598660,extended,3C0242C8
+patch=1,EE,20598664,extended,C6020104
+patch=1,EE,20598668,extended,10000003
+patch=1,EE,2059866C,extended,00000000
+patch=1,EE,20598670,extended,3C02430C
+patch=1,EE,20598674,extended,C78287C0
+patch=1,EE,20598678,extended,44820000
+patch=1,EE,2059867C,extended,C6030028
+patch=1,EE,20598680,extended,46000803
+patch=1,EE,20598684,extended,E6000108
+patch=1,EE,20598688,extended,460218C2
+patch=1,EE,2059868C,extended,8E08001C
+patch=1,EE,20598690,extended,46030542
+patch=1,EE,20598694,extended,1100000A
+patch=1,EE,20598698,extended,3C023F00
+patch=1,EE,205986A4,extended,4600AD42
+patch=1,EE,205986A8,extended,00000000
+patch=1,EE,205986AC,extended,00000000
+patch=1,EE,205986B0,extended,00000000
+patch=1,EE,205986B4,extended,00000000
+patch=1,EE,205986B8,extended,00000000
+patch=1,EE,205986BC,extended,00000000
+
+// ===== PROTECTION RECOVERY AND DATA DRAIN AVAILABILITY =====
+patch=1,EE,D0400820,extended,08006367
+patch=1,EE,2049767C,extended,0080182D
+patch=1,EE,20497680,extended,0C04880A
+patch=1,EE,20497684,extended,26240062
+patch=1,EE,2056BD80,extended,0C04880A
+patch=1,EE,2056BD84,extended,26640062
+patch=1,EE,2056BEC8,extended,0080182D
+patch=1,EE,2056BECC,extended,0C04880A
+patch=1,EE,2056BED0,extended,26640062
+
+// ===== ENEMY DEATH FADE =====
+patch=1,EE,D0400820,extended,01006367
+patch=1,EE,20435928,extended,2403003C
+
 // ===== ENEMY DECISION AND INTERVAL HELPERS =====
 patch=1,EE,00122004,word,8F888DF0
 patch=1,EE,00122008,word,8D080358
@@ -350,6 +423,22 @@ patch=1,EE,2041E070,extended,0040F809
 patch=1,EE,2041E074,extended,0200202D
 patch=1,EE,2041E078,extended,10000031
 patch=1,EE,2041E07C,extended,00000000
+
+// ===== PROTECTION BREAK AND RESTORE RINGS =====
+patch=1,EE,001C72C8,word,10600009
+patch=1,EE,001C72CC,word,0200202D
+patch=1,EE,001C72D0,word,8688006C
+patch=1,EE,001C72D4,word,2508FFED
+patch=1,EE,001C72D8,word,2D080006
+patch=1,EE,001C72E0,word,00054842
+patch=1,EE,001C72E8,word,0128280B
+
+// ===== PROTECTION BREAK AND RESTORE TEXT =====
+patch=1,EE,D0400820,extended,01006367
+patch=1,EE,20526E90,extended,24030078
+
+// ===== PROTECTION BREAK SHATTER TIMING =====
+patch=1,EE,001CA62C,word,2403003C
 
 // ===== MAGIC STARTUP RINGS =====
 patch=1,EE,001C4EF8,word,24050004
@@ -747,6 +836,104 @@ patch=1,EE,001DA874,word,8688006C
 patch=1,EE,001DA878,word,08040671
 patch=1,EE,001DA87C,word,2508FF76
 
+// ===== PERIODIC SCREEN NOISE FADE INITIALIZATION =====
+patch=1,EE,001BB5F0,word,1AA00013
+patch=1,EE,001BB5F4,word,8FA80080
+patch=1,EE,001BB5FC,word,3C090052
+patch=1,EE,001BB600,word,352923A8
+patch=1,EE,001BB604,word,01094026
+patch=1,EE,001BB608,word,24020006
+patch=1,EE,001BB60C,word,2409FFF4
+patch=1,EE,001BB610,word,0128100A
+patch=1,EE,001BB614,word,AEC20008
+patch=1,EE,001BB618,word,3C023F83
+patch=1,EE,001BB61C,word,34429581
+patch=1,EE,001BB620,word,44826000
+patch=1,EE,001BB624,word,44806800
+patch=1,EE,001BB628,word,8EC40018
+patch=1,EE,001BB62C,word,3C025080
+patch=1,EE,001BB630,word,0C041AEC
+patch=1,EE,001BB634,word,34458080
+patch=1,EE,001BB638,word,10000004
+patch=1,EE,001BB63C,word,00000000
+patch=1,EE,001BB640,word,16A00002
+patch=1,EE,001BB644,word,00000000
+patch=1,EE,001BB648,word,AEC00004
+patch=1,EE,001BB64C,word,06E00003
+patch=1,EE,001BB650,word,00000000
+patch=1,EE,001BB654,word,AED7000C
+patch=1,EE,001BB658,word,00000000
+
+// ===== PERIODIC SCREEN NOISE FADE ADVANCEMENT =====
+patch=1,EE,001BB75C,word,0060402A
+patch=1,EE,001BB760,word,00034823
+patch=1,EE,001BB764,word,0128180B
+patch=1,EE,001BB768,word,24090006
+patch=1,EE,001BB76C,word,01094804
+patch=1,EE,001BB770,word,00031080
+patch=1,EE,001BB774,word,00431821
+patch=1,EE,001BB778,word,00031900
+patch=1,EE,001BB77C,word,0069001B
+patch=1,EE,001BB780,word,3C023F83
+patch=1,EE,001BB784,word,34429581
+patch=1,EE,001BB788,word,44826000
+patch=1,EE,001BB78C,word,44806800
+patch=1,EE,001BB790,word,00001812
+patch=1,EE,001BB794,word,00031E00
+patch=1,EE,001BB798,word,3C020080
+patch=1,EE,001BB79C,word,34428080
+patch=1,EE,001BB7A0,word,00622825
+patch=1,EE,001BB7A4,word,8E640018
+patch=1,EE,001BB7A8,word,0C041AEC
+patch=1,EE,001BB7AC,word,00000000
+patch=1,EE,001BB7B0,word,8E640018
+patch=1,EE,001BB7B4,word,0C041B74
+patch=1,EE,001BB7BC,word,8E630008
+patch=1,EE,001BB7C0,word,000347C3
+patch=1,EE,001BB7C4,word,35080001
+patch=1,EE,001BB7C8,word,00681823
+
+// ===== PERIODIC SCREEN NOISE SCHEDULER PHASE =====
+patch=1,EE,001BB118,word,0000882D
+patch=1,EE,001BB11C,word,8E720010
+patch=1,EE,001BB120,word,10000017
+patch=1,EE,001BB124,word,3C080012
+patch=1,EE,001BB128,word,8C420358
+patch=1,EE,001BB12C,word,8D099474
+patch=1,EE,001BB130,word,15200003
+patch=1,EE,001BB134,word,3042007F
+patch=1,EE,001BB138,word,34490100
+patch=1,EE,001BB13C,word,AD099474
+patch=1,EE,001BB140,word,00491021
+patch=1,EE,001BB144,word,03E00008
+patch=1,EE,001BB148,word,3042007F
+patch=1,EE,001BB14C,word,00000000
+
+// ===== PERIODIC SCREEN NOISE RECURRENCE AND BURST DURATION =====
+patch=1,EE,D0400820,extended,16006367
+patch=1,EE,2052234C,extended,0C06EC49
+patch=1,EE,20522350,extended,8F828DF0
+patch=1,EE,20522354,extended,14400023
+patch=1,EE,20522358,extended,00000000
+patch=1,EE,2052235C,extended,0C04CE8E
+patch=1,EE,20522360,extended,00000000
+patch=1,EE,20522364,extended,30420003
+patch=1,EE,20522368,extended,1440001E
+patch=1,EE,2052236C,extended,00000000
+patch=1,EE,20522370,extended,0C04CE8E
+patch=1,EE,20522374,extended,00000000
+patch=1,EE,20522378,extended,24030009
+patch=1,EE,2052237C,extended,0043001A
+patch=1,EE,20522380,extended,00000000
+patch=1,EE,20522384,extended,00000000
+patch=1,EE,20522388,extended,00001010
+patch=1,EE,2052238C,extended,24420004
+patch=1,EE,20522390,extended,00022840
+patch=1,EE,20522394,extended,00A0302D
+patch=1,EE,20522398,extended,00A0382D
+patch=1,EE,2052239C,extended,00000000
+patch=1,EE,205223A4,extended,8E0400E8
+
 // ===== PROTECTED AREA WARNING AND STATIC INTRO =====
 patch=1,EE,D0400820,extended,09006367
 patch=1,EE,2056623C,extended,2402003D
@@ -944,3 +1131,27 @@ patch=1,EE,00161AC4,word,460C6300
 patch=1,EE,00161B9C,word,00063040
 patch=1,EE,00161C30,word,460C6300
 patch=1,EE,00161CC8,word,460C6300
+
+[Suppress Periodic Screen Noise]
+author=DAOWAce
+description=Suppresses random screen static flashes and their trigger sound in corrupted fields.
+
+patch=1,EE,D0400820,extended,01006367
+patch=1,EE,205223A0,extended,00000000
+
+
+[Suppress Lightning Flash]
+author=DAOWAce
+description=Suppresses lightning flashes.
+
+patch=1,EE,D0400820,extended,01006367
+patch=1,EE,205A8DDC,extended,00000000
+
+
+[Hide Foreground Clouds]
+author=DAOWAce
+description=Hides the foreground fog layer in normal fields.
+
+patch=1,EE,D0400820,extended,02006367
+patch=1,EE,205A93AC,extended,100000AF
+patch=1,EE,205A93B0,extended,00000000
