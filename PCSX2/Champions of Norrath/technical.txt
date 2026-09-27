@@ -4,7 +4,7 @@
 //   s5 = 2  dialogue voice
 //
 // A global bypass at 0024A914 fixes dialogue latency but breaks
-// background-stream fades/transitions. This patch instead redirects
+// background stream fades/transitions. This patch instead redirects
 // the branch through unused executable padding at 002DFF9C and bypasses
 // the wait only for dialogue stream 2. Other stream slots retain the
 // original v1 == 0 behavior.
@@ -21,12 +21,12 @@
 // Tested:
 // - Multiple NPC conversations
 // - Multi-page voiced dialogue
-// - Correct background-audio ducking during speech
+// - Correct background audio ducking during speech
 // - Normal background music/ambient stream transitions
-// - Opening/new-game and other tested cutscenes
+// - Opening/new game and other cutscenes up to act 2
 // - Normal environmental audio
 
-// Hook original stream-status branch into unused executable padding.
+// Hook original stream status branch into unused executable padding.
 patch=1,EE,0024A914,word,080B7FE7
 
 // Code cave: 002DFF9C-002DFFBC

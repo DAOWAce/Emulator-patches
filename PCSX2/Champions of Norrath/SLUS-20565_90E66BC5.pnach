@@ -15,9 +15,18 @@ patch=1,EE,002DFFB4,word,00000000
 patch=1,EE,002DFFB8,word,08092A60
 patch=1,EE,002DFFBC,word,00000000
 
-[Faster Player Status Voice Lines]
+[Faster Player Status Voicelines]
 author=DAOWAce
 description=Shortens the sometimes long delay between character responses (ie full inventory).
+
+[Faster Gold Pickup]
+author=DAOWAce
+description=Removes delay between gold dropping and being able to loot it.
+// Original:
+// 00154DDC 1040001D  beqz v0,00154E54
+//
+// Ignore the animation completion pickup lock.
+patch=1,EE,00154DDC,word,00000000
 
 patch=1,EE,001A69F8,word,24060026
 
