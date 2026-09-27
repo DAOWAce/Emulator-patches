@@ -19,7 +19,7 @@ Also gotta learn how to use github again after 12 years.
 
 # Current Patches:
 
-.hack//infection - 60fPS, optional accessibility patches  
-Champions of Norrath - voice delay, gold pickup delay  
-Fatal Frame - viewfinder (merged into PCSX2 patch database)  
-Final Fantasy Type 0 - western controls  
+**.hack//infection** - 60fPS, optional accessibility patches  
+**Champions of Norrath** - voice delay, gold pickup delay, no-interlace fps fix  
+**Fatal Frame** - swapped viewfinder analogs (merged into PCSX2 patch database)  
+**Final Fantasy Type 0** - western controls  
