@@ -15,3 +15,11 @@ Also gotta learn how to use github again after 12 years.
 **PPSSPP**:
 * Option 1: Right-Click on a game in the home screen -> click on "cheats" -> click on "edit cheat file" -> paste the contents into it.  
 * Option 2: Download the file and put in the _\memstick\PSP\Cheats_ directory 
+
+
+# Current Patches:
+
+.hack//infection - 60fPS, optional accessibility patches  
+Champions of Norrath - voice delay, gold pickup delay  
+Fatal Frame - viewfinder (merged into PCSX2 patch database)  
+Final Fantasy Type 0 - western controls  
